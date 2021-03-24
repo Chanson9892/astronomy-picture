@@ -1,7 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { Component } from "react";
+
+const BASE_URL = 'http://localhost:3000'
 
 function App() {
+  function getData(url){
+
+  }
   return (
     <div className="App">
       <header className="App-header">
