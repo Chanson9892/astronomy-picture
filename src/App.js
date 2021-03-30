@@ -1,5 +1,6 @@
 import './App.css';
 import React, { Component } from "react";
+import AstronomyCard from "./AstronomyCard.js"
 
 const API = 'http://localhost:3000'
 
@@ -41,19 +42,9 @@ class App extends Component{
   };
   render() {
     const { title, imageUrl, explanation, date, copyright } = this.state;
-    console.log(copyright)
     return (
-      <div style={{ position: "fixed" }}>
-        <h1>{title}</h1>
-        <h3>{date}</h3>
-        <img
-          style={{ maxHeight: "500px" }}
-          src={imageUrl}
-          alt="this will be a cool pic"
-        />
-        <h1>{copyright}</h1>
-        <p>{explanation}</p>
-        <br />
+      <div >
+        <AstronomyCard title={title} imageUrl={imageUrl} explanation={explanation} date={date} copyright={copyright}  />
         <input type="date" onChange={this.handleChange} />
       </div>
     );
