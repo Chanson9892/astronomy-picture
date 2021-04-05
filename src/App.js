@@ -43,7 +43,7 @@ class App extends Component{
   render() {
     const { title, imageUrl, explanation, date, copyright } = this.state;
     return (
-      <div >
+      <div className="wrapper">
         <AstronomyCard title={title} imageUrl={imageUrl} explanation={explanation} date={date} copyright={copyright}  />
         <input type="date" onChange={this.handleChange} />
       </div>
