@@ -10,8 +10,8 @@
 
 .wrapper {
   background-color: #282c34;
-  padding: 30px;
   height: 100%;
+  min-height: 100vh;
 }
 
 .astronomyCard {
@@ -20,5 +20,10 @@
   align-items: center;
   justify-content: center;
   color: white;
+  padding: 30px;
   padding-bottom: 10px;
+}
+
+#calendar {
+  margin-left: 30px;
 }

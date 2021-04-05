@@ -45,7 +45,7 @@ class App extends Component{
     return (
       <div className="wrapper">
         <AstronomyCard title={title} imageUrl={imageUrl} explanation={explanation} date={date} copyright={copyright}  />
-        <input type="date" onChange={this.handleChange} />
+        <input id="calendar" type="date" onChange={this.handleChange} />
       </div>
     );
   }
