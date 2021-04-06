@@ -44,8 +44,8 @@ class App extends Component{
     const { title, imageUrl, explanation, date, copyright } = this.state;
     return (
       <div className="wrapper">
-        <AstronomyCard title={title} imageUrl={imageUrl} explanation={explanation} date={date} copyright={copyright}  />
         <input id="calendar" type="date" onChange={this.handleChange} />
+        <AstronomyCard title={title} imageUrl={imageUrl} explanation={explanation} date={date} copyright={copyright}  />
       </div>
     );
   }

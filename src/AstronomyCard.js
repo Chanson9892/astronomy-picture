@@ -6,7 +6,7 @@ const AstronomyCard = (props) => {
     function IsImage() {
       if(imageUrl.includes('jpg')){
         return (
-          <img
+          <img className="image"
           style={{ maxHeight: "500px" }}
           src={imageUrl}
           alt={imageUrl}

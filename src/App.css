@@ -21,9 +21,18 @@
   justify-content: center;
   color: white;
   padding: 30px;
-  padding-bottom: 10px;
 }
 
 #calendar {
   margin-left: 30px;
+  margin-top: 30px;
+}
+
+.image:hover {
+  transition: all .2s ease;
+  transform:scale(1.5);
+  -ms-transform:scale(1.5); /* IE 9 */
+  -moz-transform:scale(1.5); /* Firefox */
+  -webkit-transform:scale(1.5); /* Safari and Chrome */
+  -o-transform:scale(1.5); /* Opera */
 }
